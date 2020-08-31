@@ -9,6 +9,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { CardComponent } from './components/card/card.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
     ModalComponent,
     CardComponent,
     BreadcrumbComponent,
-    DropdownComponent
+    DropdownComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
