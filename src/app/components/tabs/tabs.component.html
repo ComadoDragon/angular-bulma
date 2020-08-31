@@ -1,0 +1,23 @@
+<div class="tabs">
+    <ul>
+      <li [ngClass]="{'is-active': tab==1}"><a (click)=" tab = 1 " href="javascript:void(0)">Pictures</a></li>
+      <li [ngClass]="{'is-active': tab==2}"><a (click)=" tab = 2 " href="javascript:void(0)">Music</a></li>
+      <li [ngClass]="{'is-active': tab==3}"><a (click)=" tab = 3 " href="javascript:void(0)">Videos</a></li>
+      <li [ngClass]="{'is-active': tab==4}"><a (click)=" tab = 4 " href="javascript:void(0)">Documents</a></li>
+    </ul>
+  </div>
+  
+  <div class="mx-2 my-1">
+    <div class="tab-panel" id="tabPanel1" *ngIf="tab==1">
+      ABC TAB 1
+    </div>
+    <div class="tab-panel" id="tabPanel2" *ngIf="tab==2">
+      ABC TAB 2
+    </div>
+    <div class="tab-panel" id="tabPanel3" *ngIf="tab==3">
+      ABC TAB 3
+    </div>
+    <div class="tab-panel" id="tabPanel4" *ngIf="tab==4">
+      ABC TAB 4
+    </div>
+  </div>
